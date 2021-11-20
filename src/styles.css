@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.4s ease;
+}
+
+.App {
+  border-top: 6px solid #6809e1;
+  text-align: center;
+  width: 100vw;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+.dark {
+  background-color: rgb(44, 44, 44);
+}
+
+.vh {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.75rem;
+}
+
+.header img {
+  height: 3.75rem;
+  width: 3.75rem;
+}
+.btnTheme {
+  font-weight: 700;
+  font-size: 0.875rem;
+  width: 9.25rem;
+  height: 2.6875rem;
+  border-radius: 61px;
+  background-color: transparent;
+  color: #6809e1;
+  border: 1px solid #6809e1;
+  cursor: pointer;
+}
+
+.btnTheme:hover {
+  background-color: rgb(88, 223, 200);
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.875rem;
+  font-size: 1rem;
+}
+
+.barraBusqueda {
+  display: flex;
+  flex-direction: row;
+}
+.busqueda img {
+  width: 25rem;
+}
+.busqueda p {
+  color: #572ee5;
+  font-size: 2rem;
+  padding: 0.625rem;
+}
+
+.autocomplete p {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.autocomplete p:hover {
+  font-weight: 700;
+}
+
+.autocomplete {
+  border: 1px solid #572ee5;
+  background-color: #a597d6;
+  width: 33.875rem;
+  font-size: 1.2em;
+  border-radius: 0 0 30px 30px;
+}
+
+.inputBusqueda {
+  height: 3.25rem;
+  width: 28.5rem;
+  border-radius: 61px 0 0 61px;
+  border: 1px solid #121212;
+  font-size: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.inputAC {
+  border-radius: 30px 0 0 0;
+  height: 3.25rem;
+  width: 28.5rem;
+  border: 1px solid #121212;
+  font-size: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.btnBusqueda {
+  font-size: 1.25rem;
+  background-color: #572ee5;
+  border: 1px solid #000000;
+  border-radius: 0px 61px 61px 0px;
+  width: 5.375rem;
+  height: 3.25rem;
+  cursor: pointer;
+}
+.btnAC {
+  font-size: 1.25rem;
+  background-color: #572ee5;
+  border: 1px solid #000000;
+  border-radius: 0px 30px 0 0px;
+  width: 5.375rem;
+  height: 3.25rem;
+  cursor: pointer;
+}
+.busqueda button:hover {
+  background-color: #4d05d3;
+}
+.busqueda button:active {
+  background-color: #7c61dd;
+}
+.dark .btnTheme {
+  color: white;
+  border: 1px solid white;
+}
+
+.dark .busqueda p {
+  color: white;
+}
+
+.resultados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #572ee5;
+  font-size: 1.5rem;
+}
+
+.dark .resultados {
+  color: white;
+}
+
+.gifCard {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70vw;
+  padding: 1rem;
+}
+.gifCard img {
+  width: 16.625rem;
+  margin: 0.3125rem;
+  height: 16.625rem;
+  cursor: pointer;
+}
+
+.dark .gifCard {
+  background-color: #212121;
+}
+
+.notFound {
+  background-color: #410591;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.notFound img {
+  width: 30rem;
+}
+
+@media screen and (max-width: 1230px) {
+  .gifCard {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .gifCard img {
+    width: 12.625rem;
+    height: 12.625rem;
+  }
+  .gifCard {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 10px;
+  }
+  .gifCard {
+    width: 100vw;
+  }
+  .notFound {
+    width: 90%;
+  }
+}
