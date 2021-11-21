@@ -38,9 +38,9 @@ function Busqueda() {
       </form>
       {mostrarAutocomplete ? (
         <div className="autocomplete">
-          {sugerencias.map((sugerencia) => {
+          {sugerencias.map((sugerencia,i) => {
             return (
-              <p key={sugerencia.id} onClick={handlerClickBuscar}>
+              <p key={i} onClick={handlerClickBuscar}>
                 {" "}
                 <AiOutlineSearch /> {sugerencia.name}
               </p>

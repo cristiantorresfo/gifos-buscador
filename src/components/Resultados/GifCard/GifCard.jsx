@@ -10,13 +10,12 @@ function GifCard() {
       <div>
         {resultados.map((gif) => {
           return (
-            <a href={gif.url}>
-              {" "}
+            <a href={gif.url} key={gif.id}>
               <img
+                className="gifImg"
                 src={gif.images.downsized_medium.url}
                 alt="gif"
-                key={gif.id}
-              />{" "}
+              />
             </a>
           );
         })}
